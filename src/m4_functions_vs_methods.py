@@ -152,7 +152,17 @@ def try_methods():
 # IMPORTANT: Read the NOTE below before you try to implement the next function!
 ###############################################################################
 def try_functions():
-    rg.SimpleTurtle
+    j = rg.SimpleTurtle
+    j.go_to(rg.Point(200, 100))
+    j.pen_down()
+    j.go_to(rg.Point(300, 30))
+    u = rg.SimpleTurtle()
+    u.pen = rg.Pen('orange', 20)
+    u.pen_up()
+    u.go_to(rg.Point(100, 200))
+
+    u.pen_down()
+    u.go_to(rg.Point(0, 0))
     """
     Causes several SimpleTurtles to do the following:
      -- One jumps to (200, 100), then moves (while drawing) to (300, 30)

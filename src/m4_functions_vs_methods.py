@@ -157,12 +157,13 @@ def try_functions():
     j.pen_down()
     j.go_to(rg.Point(300, 30))
     u = rg.SimpleTurtle()
-    u.pen = rg.Pen('orange', 20)
-    u.pen_up()
     u.go_to(rg.Point(100, 200))
-
     u.pen_down()
     u.go_to(rg.Point(0, 0))
+    m = rg.SimpleTurtle()
+    m.go_to(rg.Point(100, 200))
+    m.pen_down()
+    m.go_to(rg.Point(0, 0))
     """
     Causes several SimpleTurtles to do the following:
      -- One jumps to (200, 100), then moves (while drawing) to (300, 30)
@@ -170,7 +171,7 @@ def try_functions():
      -- One jumps to (-50, 50), then moves (while drawing) to (100, 100)
     """
     ###########################################################################
-    # TODO: 5. Implement and test this function, per its doc-string above.
+    # Done: 5. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
     #
     #    NOTE: This function requires
@@ -184,6 +185,11 @@ def try_functions():
 # IMPORTANT: Read the NOTE below before you try to implement the next function!
 ###############################################################################
 def try_methods_and_functions():
+    blue = rg.SimpleTurtle()
+    blue.pen = rg.Pen('blue', 5)
+    blue.backward(150)
+    blue.speed(1)
+    
     """
     Constructs a SimpleTurtle and sets its   pen  to a new rg.Pen
     that is 'blue' with thickness 5.

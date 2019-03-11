@@ -189,7 +189,24 @@ def try_methods_and_functions():
     blue.pen = rg.Pen('blue', 5)
     blue.backward(150)
     blue.speed(1)
-    
+    blue.draw_square(100)
+    blue.left(30)
+    blue.draw_square(100)
+    blue.speed(5)
+    blue.pen = rg.Pen('red', 5)
+    for k in range(10):
+        blue.draw_square(50)
+        blue.left(15+k)
+    blue.speed(100)
+    blue.pen = rg.Pen('red', 35)
+    for k in range(8):
+        blue.draw_square(300)
+        blue.left(60+k)
+    blue.pen = rg.Pen('black',3)
+    blue.backward(200)
+    blue.draw_circle(30)
+    blue.draw_square(50)
+
     """
     Constructs a SimpleTurtle and sets its   pen  to a new rg.Pen
     that is 'blue' with thickness 5.
@@ -222,7 +239,7 @@ def try_methods_and_functions():
       8. Draw a SQUARE whose sides are each of length 50.
     """
     ###########################################################################
-    # TODO: 6. Implement and test this function, per its doc-string above.
+    # Done: 6. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
     #
     #   NOTE: This function should ** CALL ** the
